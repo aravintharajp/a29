@@ -1,10 +1,14 @@
 int main()
 {
-   int n,i,ans[50];
-   scanf("%d",&n);
-   for(i=0;i<n;i++)
-   {
-       scanf("%d",&ans[i]);
-       printf("%d %d\n",ans[i],i);
-   }
+    
+int sec,h,m,s;
+    
+scanf("%d",&sec);
+    
+m=(sec-(3600*h))/60;
+    
+s=(sec-(3600*h)-(m*60));
+    
+printf("%d %d  ",m,s);
+
 }
