@@ -1,11 +1,10 @@
-
 int main()
 {
-   int min,h,m;
-   scanf("%d",&min);
-   if(min>0)
+   int n,i,ans[50];
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
    {
-       h=min/60;
-       m=min-(h*60);
-       printf("%d %d",h,m);
+       scanf("%d",&ans[i]);
+       printf("%d %d\n",ans[i],i);
    }
+}
